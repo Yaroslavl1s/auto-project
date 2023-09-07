@@ -5,7 +5,7 @@
     color: rgb(0, 0, 0);
 }
 
-.Mercedec{
+.Mercedes{
     background-color: rgb(255, 255, 255);
     position: relative;
     display: inline-block;
@@ -21,11 +21,11 @@
     border-radius: 40px 10px 10px 40px;
 }
 
-.Mercedec:hover {
+.Mercedes:hover {
     background-color: rgb(255, 0, 0);
 }
 
-.Mercedec::after {
+.Mercedes::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -37,6 +37,6 @@
     transition: 0.35s;
 }
 
-.Mercedec:hover::after {
+.Mercedes:hover::after {
     transform: translateX(0);
 }
