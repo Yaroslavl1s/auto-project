@@ -6,9 +6,34 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
     <link href="App.css" rel="stylesheet" type="text/css">
+    <style>
+        span.Nissan {
+            color: rgb(165, 2, 2);
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: blue">This site is about comparing cars.</h1>
-    <button><img href="assets/images/nissan.png" width="200px"; height="200px"></button>
+    <h1 style="color: blue">Выберете о каком автомобиле вы хотите узнать подробнее.</h1>
+    <button onclick="redirectToOtherHTML()" class="Nissan">Перейти о Nissan</button>
+    <button onclick="redirectToOtherHTML()" class="BMW" >Перейти о BMW</button>
+    <button onclick="redirectToOtherHTML()" class="Toyota" >Перейти о Toyota</button>
+    <button onclick="redirectToOtherHTML()" class="Mercedec" >Перейти о Mercedec</button>
+
+    
+
+<script>
+function redirectToOtherHTML() {
+  window.location.href = "Nissan.html";
+}
+function redirectToOtherHTML() {
+  window.location.href = "BMW.html";
+}
+function redirectToOtherHTML() {
+  window.location.href = "=Toyota.html";
+}
+function redirectToOtherHTML() {
+  window.location.href = "Mercedec.html";
+}
+</script>
 </body>
 </html>
