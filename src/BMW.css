@@ -40,10 +40,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: 0.35s;
 }
 
 .BMW:hover::after {
-    transform: translateY(0);
+    transform: translateX(0);
 }
