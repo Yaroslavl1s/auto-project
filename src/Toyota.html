@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/image.png" type="image/x-icon" />
     <title>Toyota Motor Corporation</title>
-    <style>
-        .textcols {
-        overflow: hidden;
-    }
-    .textcols-left {
-        float: left;
-        width: 35%;
-        background: #ffffff;
-        color: rgb(255, 0, 0);
+<style>
+.textcols {
+	overflow: hidden;
+}
+.textcols-item {
+	float: left;
+	width: 30%;
+	background: #fff2e1;
+	margin-right: 5%;
     font-family: "Arial", Sans-serif;
-    }
-    .textcols-right {
-        float: right;
-        width: 35%;
-        background: #ffffff;
-        color: rgb(255, 0, 0);
-    font-family: "Arial", Sans-serif;
-    }
-        </style>
+}
+.textcols .textcols-item:last-child {
+	margin-right: 0;
+}
+</style>
 </head>
 <body>
     <div class="textcols">
-        <div class="textcols-left">
+        <div class="textcols-item">
             <img src="image/Cruiser_300.png" width="300">
             <p></p>
         </div>
-        <div class="textcols-right">
+        <div class="textcols-item">
             <img src="image/Supra.png" width="300">
             <p>Текст левой колонки Жл был кто то и он короче вот он да кроче о да да да дад ад дада даад а дад  ад</p>
+        </div>
+        <div class="textcols-item">
+            <img src="image/Camry_XV70.png" width="300">
+            <b>Текст третей колонки</b>
+            ...
         </div>
     </div>
 </body>
