@@ -17,12 +17,12 @@
     color: rgb(218,214,141);
     font-family: "Arial", Sans-serif;
     display: block;
-    text-shadow: -2px -2px 0 #4D4644, 2px -2px 0 #4D4644, -2px 2px 0 #4D4644, 2px 2px 0 #4D4644, 4px 4px 0 white, 5px 5px 0 white, 6px 6px 0 white;
+    text-shadow: 4px 4px 0 rgb(79, 94, 105), 5px 5px 0 rgb(79, 94, 105), 6px 6px 0 rgb(79, 94, 105);
     letter-spacing: 0.1em;
 }
 
 .sidenav a:hover {
-    color: #ff0000;
+    color: rgb(161, 159, 120);
 }
 
 @media screen and (max-height: 450px) {
