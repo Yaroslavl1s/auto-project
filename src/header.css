@@ -3,8 +3,10 @@
     font-family: "Arial", Sans-serif;
     background-color: rgb(43,53,60);
     color: rgb(218,214,141);
-    padding: 40px 15px;
+    padding: 40px 4px;
     margin-top: -10px;
     margin-right: 100%;
     width: 100%;
+    text-shadow: -2px -2px 0 #4D4644, 2px -2px 0 #4D4644, -2px 2px 0 #4D4644, 2px 2px 0 #4D4644, 4px 4px 0 white, 5px 5px 0 white, 6px 6px 0 white;
+    letter-spacing: 0.1em;
 }
