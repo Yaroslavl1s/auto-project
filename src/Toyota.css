@@ -2,18 +2,18 @@
     position: relative;
     z-index: 2;
     font-size: 15pt;
-    color: rgb(255, 255, 255);
+    color: rgb(218,214,141);
 }
 
 .textT {
     position: relative;
     z-index: 2;
     font-size: 20pt;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 249, 140);
 }
 
 .Toyota{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(43,53,60);
     position: relative;
     display: inline-block;
     padding: 10px 15px;
@@ -29,14 +29,14 @@
 }
 
 .Toyota:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(112, 126, 136);
 }
 
 .Toyota::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(79, 94, 105);
     position: absolute;
     top: 0;
     left: 0;
