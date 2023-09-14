@@ -28,54 +28,51 @@
 
 
 
-
-.dropN{
-  background-color: rgb(79, 94, 105);
-  padding: 10px 25px;
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(43,53,60);
+    color: rgb(228, 223, 135);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.dropN_switch {
-  display: none;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(88, 110, 126);
 }
 
-.dropN_body {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.4s;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.dropN_body:checked~.dropN_body {
-  max-height: 100px;
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(43,53,60);
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.dropN_headline::before {
-  content: "";
-  position: absolute;
-  left: -18px;
-  top: 4px;
-  border: 6px solid rgb(228, 223, 135);
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-  border-left-color: transparent;
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(228, 223, 135);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
 }
 
-.dropN_switch:checked~.dropN_headline::before {
-  transform: rotate(180deg) translateY(6px);
-}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(79, 94, 105)}
 
-.dropN_headline {
-  display: block;
-  position: relative;
-  margin-bottom: 15px;
-  user-select: none;
-  color: rgb(228, 223, 135);
-  font-weight: normal;
-  cursor: pointer;
-}
-
-.dropN_headline:hover {
-  text-decoration: underline;
-}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 </style>
 </head>
 <body style="background-color: rgb(79, 94, 105)">
@@ -94,18 +91,20 @@
             <h2>GT-R (R34)</h2>
             <p>Годы производства - 1999-2002</p>
             <p>Тип кузова - Купе</p>
-            <div class="dropN">
-                <input id="dropN_body_1" class="dropN_switch" type="checkbox">
-                <label for="dropN_body_1" class="dropN_headline">Массогабаритные характеристики:</label>  
-                <div class="dropN_body">
-                    Длина - 4445 мм
-                    Ширина - 1695 мм
-                    Высота - 1285 мм
-                    Масса - 1200-1450 кг
-                    Произведено - !
-                </div>
+            <p>Массогабаритные характеристики:</p>
+            <p>Длина - 4445 мм</p>
+            <p>Ширина - 1695 мм</p>
+            <p>Высота - 1285 мм</p>
+            <p>Масса - 1200-1450 кг</p>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content">
+                <p>Длина - 4445 мм</p>
+                <p>Ширина - 1695 мм</p>
+                <p>Высота - 1285 мм</p>
+              </div>
             </div>
-            
+            <p>Произведено - !</p>
         </div>
         <div class="textcols-item">
             <img src="image/Silvia.png" width="300">
@@ -140,5 +139,24 @@
             <p>Произведено - !</p>
         </div>
     </div>
+    <script>
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+      
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
 </body>
 </html
