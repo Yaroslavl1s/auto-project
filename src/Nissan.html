@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="image/image.png" type="image/x-icon" />
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dropdown.css">
     <title>AutoWIKI</title>
 <style>
 .textcols {
@@ -26,53 +27,6 @@
 	margin-right: 0;
 }
 
-
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: rgb(43,53,60);
-    color: rgb(228, 223, 135);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: rgb(88, 110, 126);
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(43,53,60);
-    width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: rgb(228, 223, 135);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgb(79, 94, 105)}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
 </style>
 </head>
 <body style="background-color: rgb(79, 94, 105)">
@@ -120,6 +74,14 @@
             <p>-Ширина - 1695 мм</p>
             <p>-Высота - 1285 мм</p>
             <p>-Масса - 1200-1450 кг</p>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <p>Длина - 4445 мм</p>
+                  <p>Ширина - 1695 мм</p>
+                  <p>Высота - 1285 мм</p>
+                </div>
+              </div>
             <p>Произведено - !</p>
         </div>
         <div class="textcols-item">
@@ -136,6 +98,14 @@
             <p>-Ширина - 1820-1830 мм</p>
             <p>-Высота - 1710-1715 мм</p>
             <p>-Масса - 1450-1646 кг</p>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <p>Длина - 4445 мм</p>
+                  <p>Ширина - 1695 мм</p>
+                  <p>Высота - 1285 мм</p>
+                </div>
+            </div>
             <p>Произведено - !</p>
         </div>
     </div>
