@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="image/image.png" type="image/x-icon" />
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="dropdown.css">
     <title>AutoWIKI</title>
 <style>
 .textcols {
@@ -26,7 +25,6 @@
 .textcols .textcols-item:last-child {
 	margin-right: 0;
 }
-
 </style>
 </head>
 <body style="background-color: rgb(79, 94, 105)">
@@ -50,14 +48,6 @@
             <p>Ширина - 1695 мм</p>
             <p>Высота - 1285 мм</p>
             <p>Масса - 1200-1450 кг</p>
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-              <div id="myDropdown" class="dropdown-content">
-                <p>Длина - 4445 мм</p>
-                <p>Ширина - 1695 мм</p>
-                <p>Высота - 1285 мм</p>
-              </div>
-            </div>
             <p>Произведено - !</p>
         </div>
         <div class="textcols-item">
@@ -74,14 +64,6 @@
             <p>-Ширина - 1695 мм</p>
             <p>-Высота - 1285 мм</p>
             <p>-Масса - 1200-1450 кг</p>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <p>Длина - 4445 мм</p>
-                  <p>Ширина - 1695 мм</p>
-                  <p>Высота - 1285 мм</p>
-                </div>
-              </div>
             <p>Произведено - !</p>
         </div>
         <div class="textcols-item">
@@ -98,35 +80,11 @@
             <p>-Ширина - 1820-1830 мм</p>
             <p>-Высота - 1710-1715 мм</p>
             <p>-Масса - 1450-1646 кг</p>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <p>Длина - 4445 мм</p>
-                  <p>Ширина - 1695 мм</p>
-                  <p>Высота - 1285 мм</p>
-                </div>
-            </div>
             <p>Произведено - !</p>
         </div>
     </div>
     <script>
-      function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-      }
       
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-      
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
     </script>
 </body>
 </html
